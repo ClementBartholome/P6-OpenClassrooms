@@ -1,0 +1,23 @@
+.banner {
+  height: 223px;
+  width: 100%;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: brightness(70%);
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    display: block;
+    color: #fff;
+    font-size: var(--fs-xl);
+    font-weight: 500;
+  }
+}

@@ -1,10 +1,12 @@
 import React from "react";
+import Banner from "../components/Banner";
+import AboutBanner from "../images/banner-about.png";
 
 function About() {
   return (
-    <div>
-      <h1>A propos</h1>
-    </div>
+    <>
+      <Banner bannerImg={AboutBanner} />
+    </>
   );
 }
 
