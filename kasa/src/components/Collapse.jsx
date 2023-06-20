@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Collapse = ({ title, content }) => {
+function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -28,6 +28,6 @@ const Collapse = ({ title, content }) => {
       )}
     </div>
   );
-};
+}
 
 export default Collapse;
