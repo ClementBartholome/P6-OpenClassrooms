@@ -2,7 +2,6 @@ import React from "react";
 import Banner from "../components/Banner";
 import AboutBanner from "../images/banner-about.png";
 import Collapse from "../components/Collapse";
-import data from "../data/logements.json";
 
 function About() {
   return (
