@@ -6,6 +6,12 @@
     object-fit: cover;
   }
 
+  h2 {
+    color: $primary;
+    font-size: var(--fs-l);
+    font-weight: 500;
+  }
+
   .logement-collapses {
     display: flex;
     gap: 76px;
