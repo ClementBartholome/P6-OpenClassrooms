@@ -1,0 +1,22 @@
+.logement {
+  img {
+    max-width: $max-screen-lg;
+    width: 100%;
+    max-height: 415px;
+    object-fit: cover;
+  }
+
+  .logement-collapses {
+    display: flex;
+    gap: 76px;
+
+    .collapse-content ul {
+      padding: 0 10px;
+
+      li {
+        color: $primary;
+        font-size: var(--fs-sm);
+      }
+    }
+  }
+}
