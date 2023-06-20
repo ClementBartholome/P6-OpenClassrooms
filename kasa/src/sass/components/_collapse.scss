@@ -1,0 +1,49 @@
+.collapse {
+  max-width: 1024px;
+  width: 100%;
+
+  .collapse-content p {
+    color: $primary;
+    background: $greyLight;
+    padding: 0 10px;
+    font-size: var(--fs-sm);
+  }
+}
+
+.collapse-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $primary;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+
+  h3 {
+    font-size: var(--fs-m);
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    padding: 5px;
+  }
+
+  .closed {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transition: 0.2s;
+  }
+
+  .open {
+    transform: rotate(-315deg);
+    -webkit-transform: rotate(-315deg);
+    transition: 0.2s;
+  }
+}

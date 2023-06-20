@@ -15,7 +15,6 @@ body {
 #root {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100vh;
 }
 
@@ -26,4 +25,8 @@ main {
   max-width: $max-screen-lg;
   display: flex;
   justify-content: flex-start;
+}
+
+ul {
+  list-style-type: none;
 }

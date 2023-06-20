@@ -7,16 +7,24 @@ function Card() {
     const { cover, title, id } = logement;
 
     return (
-      <NavLink to={`logement/${id}`} key={id}>
-        <div className="card">
-          <img src={cover} alt={title} />
-          <h2>{title}</h2>
-        </div>
-      </NavLink>
+      <li key={id}>
+        <NavLink to={`logement/${id}`}>
+          <figure className="card">
+            <img src={cover} alt={title} />
+            <figcaption>
+              <h2>{title}</h2>
+            </figcaption>
+          </figure>
+        </NavLink>
+      </li>
     );
   });
 
-  return <section class="logements">{cardsList}</section>;
+  return (
+    <section>
+      <ul className="logements">{cardsList}</ul>
+    </section>
+  );
 }
 
 export default Card;
