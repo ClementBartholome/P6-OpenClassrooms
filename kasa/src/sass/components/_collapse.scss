@@ -3,10 +3,11 @@
   width: 100%;
 
   .collapse-content p {
-    color: $primary;
-    background: $greyLight;
-    padding: 0 10px;
+    color: #ff6060;
+    background: #f7f7f7;
+    padding: 10px;
     font-size: var(--fs-sm);
+    margin: 0;
   }
 }
 
@@ -18,7 +19,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #fff;
   cursor: pointer;
-  margin: 1rem 0;
   padding: 10px;
   border-radius: 5px;
   width: 100%;

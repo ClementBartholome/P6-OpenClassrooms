@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import logementsData from "../data/logements.json";
 import Collapse from "../components/Collapse";
+import Carrousel from "../components/Carrousel";
 
 function Logement() {
   const { logementId } = useParams();
@@ -12,7 +13,7 @@ function Logement() {
       (logement) => logement.id === logementId
     );
 
-    // The state logement is updated everytime the logementId changes in the URL
+    // The state "logement" is updated everytime the logementId changes in the URL
     setLogement(logementData);
   }, [logementId]);
 
@@ -22,8 +23,7 @@ function Logement() {
 
   return (
     <section className="logement">
-      {/* Créer composant Carrousel */}
-      <img src={logement.cover} alt={logement.title} />
+      <Carrousel images={logement.pictures} />
       <h2>{logement.title}</h2>
       <div className="logement-collapses">
         <Collapse title="Description" content={logement.description} />

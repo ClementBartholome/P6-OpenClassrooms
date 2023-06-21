@@ -4,6 +4,7 @@
     width: 100%;
     max-height: 415px;
     object-fit: cover;
+    filter: brightness(80%);
   }
 
   h2 {
@@ -15,6 +16,10 @@
   .logement-collapses {
     display: flex;
     gap: 76px;
+
+    .collapse-header {
+      border-radius: 10px;
+    }
 
     .collapse-content ul {
       padding: 0 10px;

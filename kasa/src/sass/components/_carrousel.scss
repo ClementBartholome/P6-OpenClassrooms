@@ -1,0 +1,30 @@
+.carrousel {
+  color: white;
+  max-height: 415px;
+  border-radius: 25px;
+  overflow: hidden;
+
+  .carrousel-image {
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  button {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 80px;
+  }
+  .carrousel-navigation {
+    position: relative;
+    bottom: 260px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+
+  .carrousel-counter {
+    position: relative;
+    top: 210px;
+    font-weight: 500;
+  }
+}

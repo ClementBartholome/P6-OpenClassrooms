@@ -3,9 +3,9 @@ import React, { useState } from "react";
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleToggle = () => {
+  function handleToggle() {
     setIsOpen(!isOpen);
-  };
+  }
 
   return (
     <div className="collapse">
