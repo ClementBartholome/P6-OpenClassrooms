@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Collapse from "../components/Collapse";
 import Carrousel from "../components/Carrousel";
@@ -9,6 +9,7 @@ import Rating from "../components/Rating";
 function Logement() {
   const { logementId } = useParams();
   const [logement, setLogement] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchLogement = async () => {
@@ -17,20 +18,22 @@ function Logement() {
         const logementData = response.data.find(
           (logement) => logement.id === logementId
         );
-        setLogement(logementData);
+        if (logementData) {
+          setLogement(logementData);
+        } else {
+          navigate("/404");
+        }
       } catch (error) {
         console.error("Erreur lors de la récupération des données", error);
       }
     };
 
     fetchLogement();
-  }, [logementId]);
+  }, [logementId, navigate]);
 
   if (!logement) {
-    return <div>Logement non trouvé</div>;
+    return <div>Chargement en cours...</div>;
   }
-
-  const tags = logement.tags;
 
   return (
     <section className="logement">
@@ -47,7 +50,7 @@ function Logement() {
       </div>
       <div className="tags-and-rating">
         <div className="tags-container">
-          {tags.map((tag) => (
+          {logement.tags.map((tag) => (
             <Tag key={tag} tagName={tag} />
           ))}
         </div>
