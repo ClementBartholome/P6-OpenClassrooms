@@ -19,12 +19,9 @@ body {
 }
 
 main {
-  flex-direction: column;
   align-self: center;
   width: 100%;
   max-width: $max-screen-lg;
-  display: flex;
-  justify-content: flex-start;
 }
 
 ul {
