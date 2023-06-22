@@ -1,0 +1,13 @@
+.tag {
+  padding: 5px 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ff6060;
+  text-align: center;
+
+  span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

@@ -4,6 +4,7 @@ import axios from "axios";
 import Collapse from "../components/Collapse";
 import Carrousel from "../components/Carrousel";
 import Tag from "../components/Tag";
+import Rating from "../components/Rating";
 
 function Logement() {
   const { logementId } = useParams();
@@ -44,10 +45,13 @@ function Logement() {
           <img src={logement.host.picture} alt={logement.host.name}></img>
         </div>
       </div>
-      <div className="tag-container">
-        {tags.map((tag) => (
-          <Tag key={tag} tagName={tag} />
-        ))}
+      <div className="tags-and-rating">
+        <div className="tags-container">
+          {tags.map((tag) => (
+            <Tag key={tag} tagName={tag} />
+          ))}
+        </div>
+        <Rating rating={logement.rating} />
       </div>
       <div className="logement-collapses">
         <Collapse title="Description" content={logement.description} />

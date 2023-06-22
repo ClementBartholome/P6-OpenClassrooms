@@ -5,7 +5,7 @@
 
   p {
     color: #ff6060;
-
+    margin: 0;
     font-size: var(--fs-sm);
     font-weight: 500;
   }
@@ -33,7 +33,10 @@
     }
 
     .collapse-content ul {
-      padding: 0 10px;
+      padding: 20px;
+      margin: 0;
+      background: #f7f7f7;
+      border-radius: 5px;
 
       li {
         color: $primary;
@@ -50,11 +53,13 @@
     .host {
       display: flex;
       gap: 10px;
-      align-items: center;
+      align-self: baseline;
 
       p {
         max-width: 100px;
         text-align: right;
+        margin: 0;
+        align-self: center;
       }
 
       img {
@@ -63,6 +68,17 @@
         border-radius: 64px;
         background: #c4c4c4;
       }
+    }
+  }
+
+  .tags-and-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .tags-container {
+      display: flex;
+      gap: 10px;
     }
   }
 }
