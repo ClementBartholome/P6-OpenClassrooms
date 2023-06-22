@@ -1,0 +1,30 @@
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    color: #ff6060;
+    text-align: center;
+    font-size: 288px;
+    font-family: Montserrat;
+    font-weight: 700;
+  }
+
+  p {
+    color: #ff6060;
+    font-size: var(--fs-l);
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 142.6%;
+  }
+
+  a {
+    color: #ff6060;
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    line-height: 142.6%;
+    text-decoration-line: underline;
+  }
+}
