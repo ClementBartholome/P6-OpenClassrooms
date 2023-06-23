@@ -11,3 +11,11 @@
     font-weight: 500;
   }
 }
+
+@media (max-width: 767.98px) {
+  .tag {
+    span {
+      font-size: 10px;
+    }
+  }
+}

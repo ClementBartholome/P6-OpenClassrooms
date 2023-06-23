@@ -7,9 +7,19 @@ footer {
   padding: 60px 0 30px 0;
   gap: 30px;
   margin-top: 50px;
+  text-align: center;
 
   span {
     color: white;
     font-size: var(--fs-m);
+  }
+}
+
+@media (max-width: 767.98px) {
+  footer {
+    margin-top: 19px;
+    span {
+      font-size: 12px;
+    }
   }
 }

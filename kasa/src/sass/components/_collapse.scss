@@ -49,3 +49,11 @@
     transition: 0.2s;
   }
 }
+
+@media (max-width: 767.98px) {
+  .collapse-header {
+    h3 {
+      font-size: 13px;
+    }
+  }
+}

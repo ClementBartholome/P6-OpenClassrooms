@@ -1,6 +1,5 @@
 .banner {
   height: 223px;
-  width: 100%;
   position: relative;
 
   img {
@@ -19,5 +18,19 @@
     color: #fff;
     font-size: var(--fs-xl);
     font-weight: 500;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .banner.home {
+    height: 111px;
+
+    h1 {
+      font-size: 24px;
+      width: 65%;
+      text-align: left;
+      left: 20px;
+      top: 12%;
+    }
   }
 }

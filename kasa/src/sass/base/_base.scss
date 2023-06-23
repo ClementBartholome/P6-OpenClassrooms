@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -16,12 +22,14 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  justify-content: space-between;
 }
 
 main {
   align-self: center;
-  width: 100%;
   max-width: $max-screen-lg;
+  padding: 0 20px;
+  width: 100%;
 }
 
 ul {

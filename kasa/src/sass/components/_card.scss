@@ -1,5 +1,5 @@
 .card {
-  width: 340px;
+  max-width: 340px;
   height: 340px;
   background: #ff6060;
   border-radius: 10px;
@@ -26,5 +26,16 @@
     color: white;
     font-weight: 500;
     max-width: 80%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .card {
+    height: 255px;
+
+    &:hover {
+      transition: 0;
+      transform: scale(1);
+    }
   }
 }

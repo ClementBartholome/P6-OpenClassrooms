@@ -34,3 +34,19 @@
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   display: flex;
 }
+
+@media (max-width: 767.98px) {
+  .carrousel {
+    height: 255px;
+
+    button {
+      font-size: 40px;
+    }
+    .carrousel-navigation {
+      bottom: 100px;
+    }
+    .carrousel-counter {
+      display: none;
+    }
+  }
+}

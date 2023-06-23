@@ -25,6 +25,7 @@ function Home() {
       <Banner
         bannerImg={HomeBanner}
         bannerTitle="Chez vous, partout et ailleurs"
+        page="home"
       />
       <section className="logements">
         {logements.map((logement) => (

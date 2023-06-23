@@ -6,7 +6,7 @@ import Collapse from "../components/Collapse";
 function About() {
   return (
     <>
-      <Banner bannerImg={AboutBanner} />
+      <Banner bannerImg={AboutBanner} page="about" />
       <section className="about-collapses">
         <Collapse
           title="Fiabilité"

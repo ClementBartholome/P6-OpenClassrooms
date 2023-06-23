@@ -28,3 +28,20 @@
     text-decoration-line: underline;
   }
 }
+
+@media (max-width: 767.98px) {
+  .page-404 {
+    span {
+      font-size: 96px;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
+}
