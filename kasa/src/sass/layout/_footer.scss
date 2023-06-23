@@ -6,7 +6,7 @@ footer {
   flex-direction: column;
   padding: 60px 0 30px 0;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: auto;
   text-align: center;
 
   span {
@@ -17,7 +17,6 @@ footer {
 
 @media (max-width: 767.98px) {
   footer {
-    margin-top: 19px;
     span {
       font-size: 12px;
     }

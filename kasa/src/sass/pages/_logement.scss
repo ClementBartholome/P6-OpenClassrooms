@@ -29,6 +29,7 @@
   .logement-collapses {
     display: flex;
     gap: 76px;
+    margin-bottom: 50px;
 
     .collapse-header {
       border-radius: 10px;
@@ -113,6 +114,7 @@
   .logement .logement-collapses {
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 27px;
     .collapse-content ul li {
       font-size: 14px;
     }

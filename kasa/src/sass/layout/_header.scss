@@ -12,7 +12,6 @@ header {
       display: flex;
       flex-wrap: nowrap;
       gap: 57px;
-      gap: 26px;
       align-items: center;
     }
 
@@ -42,8 +41,12 @@ header {
     img {
       width: 140px;
     }
-    nav ul li a {
-      font-size: 12px;
+    nav ul {
+      gap: 26px;
+
+      li a {
+        font-size: 12px;
+      }
     }
   }
 }
