@@ -15,6 +15,7 @@
     max-height: 415px;
     object-fit: cover;
     filter: brightness(80%);
+    flex-shrink: 0;
   }
 
   h2 {

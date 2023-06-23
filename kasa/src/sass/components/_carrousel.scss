@@ -1,8 +1,10 @@
 .carrousel {
-  color: white;
-  max-height: 415px;
-  border-radius: 25px;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
   overflow: hidden;
+  position: relative;
+  width: 100%;
 
   button {
     border: none;
@@ -11,16 +13,24 @@
     font-size: 80px;
   }
   .carrousel-navigation {
-    position: relative;
-    bottom: 260px;
+    position: absolute;
+    bottom: 160px;
     display: flex;
     justify-content: space-between;
-    margin: 0 20px;
+    width: 100%;
   }
 
   .carrousel-counter {
-    position: relative;
-    top: 210px;
+    position: absolute;
     font-weight: 500;
+    align-self: center;
+    left: 50%;
+    top: 200px;
+    color: white;
   }
+}
+
+.carrousel-container {
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  display: flex;
 }

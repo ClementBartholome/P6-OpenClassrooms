@@ -1,7 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 function Carrousel({ images }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const carrouselImageRef = useRef(null);
+
+  const imageSize = () => {
+    const carrouselImage = carrouselImageRef.current;
+
+    if (!carrouselImage) {
+      return 0;
+    }
+
+    return carrouselImage.width;
+  };
 
   function previousImage() {
     setCurrentImageIndex((currentIndex) =>
@@ -25,11 +36,21 @@ function Carrousel({ images }) {
 
   return (
     <div className="carrousel">
-      <img
-        className="carrousel-image"
-        src={images[currentImageIndex]}
-        alt="Logement"
-      />
+      <div
+        className="carrousel-container"
+        style={{
+          transform: `translateX(-${currentImageIndex * imageSize()}px)`,
+        }}>
+        {images.map((image, index) => (
+          <img
+            className="carrousel-image"
+            src={image}
+            key={index}
+            alt="Logement"
+            ref={carrouselImageRef}
+          />
+        ))}
+      </div>
       <div className="carrousel-navigation">
         <button className="carrousel-button" onClick={previousImage}>
           &lt;
