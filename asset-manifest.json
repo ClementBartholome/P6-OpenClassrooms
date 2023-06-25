@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ClementBartholome/P6-OpenClassrooms/static/css/main.80b1057e.css",
+    "main.js": "/ClementBartholome/P6-OpenClassrooms/static/js/main.d36e3878.js",
+    "static/media/banner-about.png": "/ClementBartholome/P6-OpenClassrooms/static/media/banner-about.dc7a08e1faa2e14de0bd.png",
+    "static/media/banner-home.png": "/ClementBartholome/P6-OpenClassrooms/static/media/banner-home.1168be13650bb18b456e.png",
+    "index.html": "/ClementBartholome/P6-OpenClassrooms/index.html",
+    "main.80b1057e.css.map": "/ClementBartholome/P6-OpenClassrooms/static/css/main.80b1057e.css.map",
+    "main.d36e3878.js.map": "/ClementBartholome/P6-OpenClassrooms/static/js/main.d36e3878.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80b1057e.css",
+    "static/js/main.d36e3878.js"
+  ]
+}
