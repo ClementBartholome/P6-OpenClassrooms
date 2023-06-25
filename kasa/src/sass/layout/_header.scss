@@ -21,7 +21,6 @@ header {
         color: $primary;
         text-decoration: none;
         font-size: var(--fs-m);
-        text-transform: uppercase;
 
         &:hover,
         &.active {
@@ -46,6 +45,7 @@ header {
 
       li a {
         font-size: 12px;
+        text-transform: uppercase;
       }
     }
   }

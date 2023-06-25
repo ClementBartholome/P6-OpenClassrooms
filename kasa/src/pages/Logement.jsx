@@ -5,15 +5,18 @@ import Collapse from "../components/Collapse";
 import Carrousel from "../components/Carrousel";
 import Tag from "../components/Tag";
 import Rating from "../components/Rating";
+import Loader from "../components/Loader";
 
 function Logement() {
   const { logementId } = useParams();
   const [logement, setLogement] = useState(null);
+  const [isDataLoading, setDataLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchLogement = async () => {
       try {
+        await new Promise((resolve) => setTimeout(resolve, 1000));
         const response = await axios.get("/logements.json");
         const logementData = response.data.find(
           (logement) => logement.id === logementId
@@ -23,6 +26,7 @@ function Logement() {
         } else {
           navigate("/404");
         }
+        setDataLoading(false);
       } catch (error) {
         console.error("Erreur lors de la récupération des données", error);
       }
@@ -31,8 +35,8 @@ function Logement() {
     fetchLogement();
   }, [logementId, navigate]);
 
-  if (!logement) {
-    return <div>Chargement en cours...</div>;
+  if (isDataLoading || !logement) {
+    return <Loader />;
   }
 
   return (
