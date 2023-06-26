@@ -1,13 +1,15 @@
 .logements {
   align-items: center;
-  background-color: $greyLight;
+  background-color: #f7f7f7;
   border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
   margin-top: 40px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 43px;
+  padding-top: 56px;
 
   a {
     color: inherit;
@@ -17,6 +19,8 @@
 
 @media (max-width: 767.98px) {
   .logements {
-    padding-bottom: 27px;
+    padding: 0;
+    margin-bottom: 27px;
+    background-color: white;
   }
 }
