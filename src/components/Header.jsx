@@ -6,17 +6,17 @@ function Header() {
   return (
     <header>
       <div>
-        <NavLink to="/kasa">
+        <NavLink to="/P6-OpenClassrooms/home">
           <img src={Logo} alt="Logo Kasa" />
         </NavLink>
       </div>
       <nav>
         <ul>
           <li>
-            <NavLink to="/kasa">Accueil</NavLink>
+            <NavLink to="/P6-OpenClassrooms/home">Accueil</NavLink>
           </li>
           <li>
-            <NavLink to="/about">A Propos</NavLink>
+            <NavLink to="/P6-OpenClassrooms/about">A Propos</NavLink>
           </li>
         </ul>
       </nav>

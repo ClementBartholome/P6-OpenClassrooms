@@ -7,9 +7,13 @@ import PageNotFound from "./pages/PageNotFound";
 function RoutesConfig() {
   return (
     <Routes>
-      <Route path="/kasa" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/kasa/logement/:logementId" element={<Logement />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/P6-OpenClassrooms/home" element={<Home />} />
+      <Route path="/P6-OpenClassrooms/about" element={<About />} />
+      <Route
+        path="/P6-OpenClassrooms/home/logement/:logementId"
+        element={<Logement />}
+      />
       <Route path="/*" element={<PageNotFound />} />
       <Route path="/404" element={<PageNotFound />} />
     </Routes>
