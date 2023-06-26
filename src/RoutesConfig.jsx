@@ -8,13 +8,8 @@ function RoutesConfig() {
   return (
     <Routes>
       <Route path="/P6-OpenClassrooms" element={<Home />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/P6-OpenClassrooms/home" element={<Home />} />
-      <Route path="/P6-OpenClassrooms/about" element={<About />} />
-      <Route
-        path="/P6-OpenClassrooms/home/logement/:logementId"
-        element={<Logement />}
-      />
+      <Route path="/about" element={<About />} />
+      <Route path="/logement/:logementId" element={<Logement />} />
       <Route path="/*" element={<PageNotFound />} />
       <Route path="/404" element={<PageNotFound />} />
     </Routes>

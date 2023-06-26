@@ -6,7 +6,7 @@ function Card({ logement }) {
 
   return (
     <article key={id}>
-      <NavLink to={`logement/${id}`}>
+      <NavLink to={`/logement/${id}`}>
         <figure className="card">
           <img src={cover} alt={title} />
           <figcaption>
