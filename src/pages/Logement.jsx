@@ -17,7 +17,9 @@ function Logement() {
     const fetchLogement = async () => {
       try {
         await new Promise((resolve) => setTimeout(resolve, 1000));
-        const response = await axios.get("/logements.json");
+        const response = await axios.get(
+          process.env.PUBLIC_URL + "/logements.json"
+        );
         const logementData = response.data.find(
           (logement) => logement.id === logementId
         );
