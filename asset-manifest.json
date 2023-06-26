@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/P6-OpenClassrooms/kasa/static/css/main.80b1057e.css",
-    "main.js": "/P6-OpenClassrooms/kasa/static/js/main.eea957e2.js",
-    "static/media/banner-about.png": "/P6-OpenClassrooms/kasa/static/media/banner-about.dc7a08e1faa2e14de0bd.png",
-    "static/media/banner-home.png": "/P6-OpenClassrooms/kasa/static/media/banner-home.1168be13650bb18b456e.png",
-    "index.html": "/P6-OpenClassrooms/kasa/index.html",
-    "main.80b1057e.css.map": "/P6-OpenClassrooms/kasa/static/css/main.80b1057e.css.map",
-    "main.eea957e2.js.map": "/P6-OpenClassrooms/kasa/static/js/main.eea957e2.js.map"
+    "main.css": "/P6-OpenClassrooms/home/static/css/main.80b1057e.css",
+    "main.js": "/P6-OpenClassrooms/home/static/js/main.899609e6.js",
+    "static/media/banner-about.png": "/P6-OpenClassrooms/home/static/media/banner-about.dc7a08e1faa2e14de0bd.png",
+    "static/media/banner-home.png": "/P6-OpenClassrooms/home/static/media/banner-home.1168be13650bb18b456e.png",
+    "index.html": "/P6-OpenClassrooms/home/index.html",
+    "main.80b1057e.css.map": "/P6-OpenClassrooms/home/static/css/main.80b1057e.css.map",
+    "main.899609e6.js.map": "/P6-OpenClassrooms/home/static/js/main.899609e6.js.map"
   },
   "entrypoints": [
     "static/css/main.80b1057e.css",
-    "static/js/main.eea957e2.js"
+    "static/js/main.899609e6.js"
   ]
 }
