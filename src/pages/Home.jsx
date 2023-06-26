@@ -13,7 +13,9 @@ function Home() {
     const fetchData = async () => {
       try {
         await new Promise((resolve) => setTimeout(resolve, 1000));
-        const response = await axios.get("/logements.json");
+        const response = await axios.get(
+          process.env.PUBLIC_URL + "/logements.json"
+        );
         setLogements(response.data);
         setDataLoading(false);
       } catch (error) {
