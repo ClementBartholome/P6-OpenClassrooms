@@ -12,6 +12,11 @@
     color: white;
     font-size: 80px;
     cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+    }
   }
   .carrousel-navigation {
     position: absolute;
