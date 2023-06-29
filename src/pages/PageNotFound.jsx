@@ -6,7 +6,7 @@ function PageNotFound() {
     <div className="page-404">
       <span>404</span>
       <p>Oups! La page que vous demandez n'existe pas.</p>
-      <NavLink to="/">Retourner sur la page d'accueil</NavLink>
+      <NavLink to="/P6-OpenClassrooms">Retourner sur la page d'accueil</NavLink>
     </div>
   );
 }
