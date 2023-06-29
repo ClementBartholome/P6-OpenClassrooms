@@ -18,6 +18,11 @@ body {
   width: 100vw;
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
 #root {
   display: flex;
   flex-direction: column;
