@@ -1,5 +1,5 @@
 .carrousel {
-  border-radius: 0.8rem;
+  border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   overflow: hidden;
@@ -44,6 +44,7 @@
 @media (max-width: 767.98px) {
   .carrousel {
     height: 255px;
+    border-radius: 10px;
 
     button {
       font-size: 40px;
