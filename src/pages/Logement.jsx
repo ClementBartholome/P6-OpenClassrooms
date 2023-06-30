@@ -35,7 +35,7 @@ function Logement() {
     };
 
     fetchLogement();
-  }, [logementId, navigate]);
+  });
 
   if (isDataLoading || !logement) {
     return <Loader />;
