@@ -8,3 +8,11 @@
 }
 
 /* Mobile */
+
+@media (max-width: 767.98px) {
+  :root {
+    --fs-m: 13px;
+    --fs-l: 18px;
+    --fs-xl: 24px;
+  }
+}
