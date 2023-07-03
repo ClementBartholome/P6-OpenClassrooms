@@ -33,6 +33,7 @@
 @media (max-width: 767.98px) {
   .card {
     height: 255px;
+    max-width: 100%;
 
     &:hover {
       transition: 0;
