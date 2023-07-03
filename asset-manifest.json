@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/P6-OpenClassrooms/static/css/main.8cce3fc8.css",
-    "main.js": "/P6-OpenClassrooms/static/js/main.3ce78f78.js",
+    "main.css": "/P6-OpenClassrooms/static/css/main.aceedc5c.css",
+    "main.js": "/P6-OpenClassrooms/static/js/main.99bd5b64.js",
     "static/media/banner-about.png": "/P6-OpenClassrooms/static/media/banner-about.dc7a08e1faa2e14de0bd.png",
     "static/media/banner-home.png": "/P6-OpenClassrooms/static/media/banner-home.1168be13650bb18b456e.png",
     "index.html": "/P6-OpenClassrooms/index.html",
-    "main.8cce3fc8.css.map": "/P6-OpenClassrooms/static/css/main.8cce3fc8.css.map",
-    "main.3ce78f78.js.map": "/P6-OpenClassrooms/static/js/main.3ce78f78.js.map"
+    "main.aceedc5c.css.map": "/P6-OpenClassrooms/static/css/main.aceedc5c.css.map",
+    "main.99bd5b64.js.map": "/P6-OpenClassrooms/static/js/main.99bd5b64.js.map"
   },
   "entrypoints": [
-    "static/css/main.8cce3fc8.css",
-    "static/js/main.3ce78f78.js"
+    "static/css/main.aceedc5c.css",
+    "static/js/main.99bd5b64.js"
   ]
 }
