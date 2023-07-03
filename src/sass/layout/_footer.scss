@@ -12,11 +12,14 @@ footer {
   span {
     color: white;
     font-size: var(--fs-m);
+    font-weight: 500;
   }
 }
 
 @media (max-width: 767.98px) {
   footer {
+    padding: 66px 120px 58px 122px;
+    gap: 10px;
     span {
       font-size: 12px;
     }
