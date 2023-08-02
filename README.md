@@ -6,7 +6,7 @@
 
 ## Screenshot 
 
-[](https://storage.googleapis.com/images_portfolio_steam/project_kasa.webp)
+![Screenshot](https://storage.googleapis.com/images_portfolio_steam/project_kasa.webp)
 
 ## Description
 
